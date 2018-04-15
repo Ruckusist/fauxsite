@@ -1,0 +1,16 @@
+4-15-18: working today on getting everything on the screen.
+    1. react component.
+    2. sass mixin.
+    3. python API.
+    
+   1. React files are .jsx. They should be able to interact 
+   .    with regular npm installed js libraries. I just need
+   .    to do the hello world example properly. 1:11 start.
+   .    react files are importing from each other properly. 2:12 end.
+   
+   2. scss* minify is working. and compile/export.
+   2a. bootstrap from cdn is also working.
+   
+   3. Python... I think i want to use the dashapp reloading function
+   .    in flask. so, dash app, and callbacks. or no dash app, maybe
+   .    there is another way. google something.

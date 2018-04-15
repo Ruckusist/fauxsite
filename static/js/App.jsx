@@ -1,5 +1,8 @@
+// App.jsx
+import React from "react";
+
 export default class App extends React.Component {
   render () {
-    return 'test';
+    return <p>This is totally working.</p>;
   }
 }

@@ -1,1 +1,6 @@
 static/node_modules
+*.ipynb
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+*/*/.ipynb_checkpoints
+
