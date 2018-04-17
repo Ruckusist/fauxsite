@@ -1,1 +1,1 @@
-body{font-size:12px}body a{color:#000}
+body{font-size:12px}body a{color:#000}body #testblock{border:5px solid coral;-webkit-animation:faded 5s infinite}@-webkit-keyframes $faded{50%{border-color:light-blue}}

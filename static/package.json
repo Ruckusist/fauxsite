@@ -32,5 +32,8 @@
       "es2015",
       "react"
     ]
+  },
+  "dependencies": {
+    "axios": "^0.17.1"
   }
 }

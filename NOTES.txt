@@ -1,3 +1,26 @@
+4-17-18: Figure out the flask CORS module and make it work.
+    1. get some sort of reposonse from the http request.
+    2. 
+
+4-16-18: working on Ajax client server realations.
+    1. install and make axios work in npm and react.
+    2. hookup flask CORS module for api calls.
+    3. make flask reload on changes real cool like npm does.
+    
+    1. AXIOS is an async library for making API calls in javascript.
+    .   the example for this is creating full javascript classes. This
+    .   will be useful in other applications for sure.
+    .   i still havnt figured out what ajax is ??
+    .   this is not working. the instructions were for a docker setup,
+    .   and im just not there yet.
+    
+    2. Flask CORS is installed and loading but the api stuff is undone.
+    .   cant access CORS from react yet. but it seems to be loaded properly.
+    
+    3. need to do this. okay to make flash reload on page save, a different
+    .   firing mechinism is needed, i will add these instructions to the
+    .   README.md.
+
 4-15-18: working today on getting everything on the screen.
     1. react component.
     2. sass mixin.

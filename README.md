@@ -8,7 +8,8 @@ can be deployed on a customer need basis.
 Technologies:
     backend:
     Flask
-    Docker
+    Flask-cors
+    Docker  # not hooked up.
     
     frontend:
     React - Webpack - babel
@@ -19,7 +20,9 @@ TO start dev process start a 5 panel teminator/tmux window
 
 (1)in ./static | npm run devstart
 (2)in ./static | gulp
-(3)in ./       | python3 server.py
+(3)in ./       | export FLASK_APP=server.py
+               | export FLASK_DEBUG=1
+               | flask run
 (4) ...        | htop
 (5)in ./       | jupyter lab
 

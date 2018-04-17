@@ -1,11 +1,27 @@
 import os, sys, time, datetime
 from flask import Flask, render_template
+from flask_cors import CORS, cross_origin
 
-print('this is working', datetime.datetime.now())
+
+print('Starting Basic Flask Server with CORS support.\n\t', datetime.datetime.now())
 
 
-app = Flask(__name__, static_folder="static/dist", template_folder="static")
+app = Flask(
+    'Fucking_Sweet_App', 
+    static_folder="static/dist", 
+    template_folder="static"
+)
+cors = CORS(
+    app,
+    resources={
+        r"/static/*": dict(origins="*")
+    }
+)
 
+def test_print():
+    print('hello java command line.')
+
+app.shell_context_processor({'app': app, 'yeah': test_print})
 
 @app.route("/")
 def index():
@@ -14,7 +30,18 @@ def index():
 
 @app.route("/hello")
 def hello():
-    return "Working From Python"
+    return\
+        '''
+        <head>
+            <link rel="stylesheet" type="text/css" href="./dist/default.min.css" />
+            <title>Fucking Sweet App</title>
+        </head>
+        <body>
+            <div id='testblock'>
+                <p>Working From Python</p>
+            </div>
+        </body>
+        '''
 
 
 if __name__ == "__main__":
